@@ -27,7 +27,7 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
-          #token: 
+          github_token: ${{ secret.WORKFLOW_TOKEN }}
           source_repo_path: onedr0p/cluster-template
           upstream_branch: main # defaults to main
           pr_labels: template_sync # defaults to template_sync
