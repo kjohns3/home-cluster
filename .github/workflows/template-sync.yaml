@@ -23,7 +23,7 @@ jobs:
         # with:
         #   submodules: true
         with:
-          token: ${{ secret.WORKFLOW_TOKEN }}
+          token: ${{ secrets.WORKFLOW_TOKEN }}
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
